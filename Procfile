@@ -1,1 +1,1 @@
-web: npm start -- --config-env prod
+web: npm start -- --config-env $ENV_VAR
