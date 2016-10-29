@@ -10,6 +10,9 @@ import Config from '../../config';
 export = () => {
   console.log('----------------');
   console.log('Running sample task');
+  console.log('----------------');
+  console.log(join(Config.APP_SRC, '**/*.ts'), Config.APP_DEST);
+  console.log('----------------');
   return gulp.src(join(Config.APP_SRC, '**/*.ts'))
     .pipe(gulp.dest(Config.APP_DEST));
 };
