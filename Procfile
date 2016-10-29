@@ -1,1 +1,1 @@
-web: npm start -- --config-env $ENV_VAR
+web: npm run serve.$ENV_VAR
