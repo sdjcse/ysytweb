@@ -25,3 +25,5 @@ deploy:
   app: intense-beach-95674
   on:
     repo: senthilkumar04/ysytweb
+  run:
+    - npm run build.prod
