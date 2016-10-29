@@ -22,7 +22,7 @@ export = () => {
   let es: any = require('event-stream');
   console.log('---------------');
   console.log(Config.APP_DEST);
-  console.log('---------------');
+  console.log('--------------');
   return gulp.src([
     join(Config.APP_SRC, '**'),
     '!' + join(Config.APP_SRC, 'tsconfig.json'),
