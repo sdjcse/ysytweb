@@ -15,8 +15,15 @@ before_install:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
 
+install:
+  - npm install -g gulp
+  - npm install
+
 script:
   - npm test
+
+before_deploy:
+  - npm install gulp
 
 deploy:
   provider: heroku
