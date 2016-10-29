@@ -20,7 +20,6 @@
     "karma": "karma",
     "karma.start": "karma start",
     "preinstall": "npm install -g gulp",
-    "postinstall": "npm install gulp && gulp check.versions && gulp build.bundle.rxjs && npm prune && gulp webdriver",
     "reinstall": "npm cache clean && npm install",
     "serve.coverage": "remap-istanbul -b src/ -i coverage/coverage-final.json -o coverage -t html && npm run gulp -- serve.coverage --color",
     "serve.dev": "gulp serve.dev --color --env-config dev --config-env dev",
