@@ -59,7 +59,7 @@ export function serveCoverage() {
  * Starts a new `express` server, serving the built files from `dist/prod`.
  */
 export function serveProd() {
-  let root = resolve(process.cwd(), Config.PROD_DEST);
+  let root = resolve(Config.PROD_DEST);
   let server = express();
   console.log('------------------------------');
   console.log('heroku dir : '+process.cwd());
