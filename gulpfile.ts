@@ -45,13 +45,6 @@ gulp.task('build.prod', (done: any) =>
               'clean.prod',
               'tslint',
               'build.assets.prod',
-              'build.html_css',
-              'copy.prod',
-              'build.js.prod',
-              'build.bundles',
-              'build.bundles.app',
-              'minify.bundles',
-              'build.index.prod',
               done));
 
 // --------------
