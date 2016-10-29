@@ -8,6 +8,8 @@ import Config from '../../config';
  * current application environment.
  */
 export = () => {
+  console.log('----------------');
+  console.log('Running sample task');
   return gulp.src(join(Config.APP_SRC, '**/*.ts'))
     .pipe(gulp.dest(Config.APP_DEST));
 };

@@ -41,7 +41,7 @@ gulp.task('build.e2e', (done: any) =>
 // --------------
 // Build prod.
 gulp.task('build.prod', (done: any) =>
-  runSequence('build.assets.prod',
+  runSequence('sample.task',
               done));
 
 // --------------
