@@ -68,6 +68,9 @@ export function serveProd() {
   console.log('Prod destination : '+Config.PROD_DEST);
   console.log('------------------------------');
   console.log('------------------------------');
+  console.log('root dir : '+root);
+  console.log('------------------------------');
+  console.log('------------------------------');
   console.log('App base destination : '+Config.APP_BASE);
   console.log('------------------------------');
   server.use(Config.APP_BASE, express.static(root));
