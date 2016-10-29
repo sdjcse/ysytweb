@@ -1,1 +1,1 @@
-web: npm run serve.$ENV_VAR
+web: npm run build.prod
