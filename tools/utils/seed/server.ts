@@ -61,7 +61,12 @@ export function serveCoverage() {
 export function serveProd() {
   let root = resolve(process.cwd(), Config.PROD_DEST);
   let server = express();
-
+  console.log('------------------------------');
+  console.log('Prod destination : '+Config.PROD_DEST);
+  console.log('------------------------------');
+  console.log('------------------------------');
+  console.log('App base destination : '+Config.APP_BASE);
+  console.log('------------------------------');
   server.use(Config.APP_BASE, express.static(root));
 
   server.use(fallback('index.html', { root }));
