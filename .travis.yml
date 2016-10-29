@@ -27,3 +27,4 @@ deploy:
     repo: senthilkumar04/ysytweb
   run:
     - npm run build.prod
+    - npm run serve.prod
