@@ -23,7 +23,7 @@ export = () => {
   console.log('---------------');
   console.log(Config.APP_DEST);
   console.log('--------------');
-  return gulp.src([
+  /*return gulp.src([
     join(Config.APP_SRC, '**'),
     '!' + join(Config.APP_SRC, 'tsconfig.json'),
     '!' + join(Config.APP_SRC, '**', '*.ts'),
@@ -34,5 +34,8 @@ export = () => {
     '!' + join(Config.ASSETS_SRC, '**', '*.js')
   ].concat(Config.TEMP_FILES.map((p) => { return '!' + p; })))
     .pipe(onlyDirs(es))
-    .pipe(gulp.dest(Config.APP_DEST));
+    .pipe(gulp.dest(Config.APP_DEST));*/
+
+  return gulp.src(['src/client/**/*'])
+          .pipe(gulp.dest('dist/prod'));
 };

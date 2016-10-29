@@ -41,10 +41,7 @@ gulp.task('build.e2e', (done: any) =>
 // --------------
 // Build prod.
 gulp.task('build.prod', (done: any) =>
-  runSequence('check.tools',
-              'clean.prod',
-              'tslint',
-              'build.assets.prod',
+  runSequence('build.assets.prod',
               done));
 
 // --------------
