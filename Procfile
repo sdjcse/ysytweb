@@ -1,1 +1,1 @@
-web: npm run build.prod --port $PORT
+web: npm start -- --port $PORT --env-config prod
