@@ -49,7 +49,7 @@ export class SeedConfig {
    * The default port is `5555`, which can be overriden by the  `--port` flag when running `npm start`.
    * @type {number}
    */
-  PORT = argv['port'] || 5555;
+  PORT = process.env.PORT || argv['port'] || 5555;
 
   /**
    * The root folder of the project (up two levels from the current directory).
