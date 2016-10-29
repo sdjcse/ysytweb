@@ -65,7 +65,9 @@ export function serveProd() {
   server.use(Config.APP_BASE, express.static(root));
 
   server.use(fallback('index.html', { root }));
-
+  console.log('------------------------------');
+  console.log('listening to the port : '+Config.PORT);
+  console.log('------------------------------');
   server.listen(Config.PORT, () =>
     openResource('http://localhost:' + Config.PORT + Config.APP_BASE)
   );
