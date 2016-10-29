@@ -2,7 +2,7 @@ language: node_js
 
 node_js: stable
 
-sudo: false
+sudo: required
 
 addons:
   chrome: stable
@@ -15,15 +15,8 @@ before_install:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
 
-install:
-  - npm install -g gulp
-  - npm install
-
 script:
   - npm test
-
-before_deploy:
-  - npm install gulp --save
 
 deploy:
   provider: heroku
@@ -32,3 +25,5 @@ deploy:
   app: intense-beach-95674
   on:
     repo: senthilkumar04/ysytweb
+  run:
+    - npm run build.prod
