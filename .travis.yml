@@ -23,7 +23,7 @@ script:
   - npm test
 
 before_deploy:
-  - npm install gulp
+  - npm install gulp --save
 
 deploy:
   provider: heroku
