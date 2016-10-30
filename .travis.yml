@@ -1,29 +1,23 @@
 language: node_js
-
 node_js: stable
-
 sudo: required
-
+skip_cleanup: true
 addons:
   chrome: stable
-
 os:
-  - linux
-
+- linux
 before_install:
-  - export CHROME_BIN=chromium-browser
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-
+- export CHROME_BIN=chromium-browser
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
 script:
-  - npm test
-
+- npm test
 deploy:
   provider: heroku
   api_key:
-    secure: OR4o1qoSUfkWIRBeQJbjOQHitL5EHjhY9TQyvpdDWvP4KTch5raQ+d1QKv5nTdnXpUyC6jr6AjaBTkl7piRkmned6sS58w9LsPkOvhRc880+6W3pQr+fQSYnW+jrAKA5p3r7F99EcgtUpqrga+MXF0MlJX+1YkzoPF7JcMIk6VzWKyPBeTsFdjIwjJxtRoxT8DpS76HtnSR7eSkHjXwvQvvJKdFENyQQ1hjaVOLFgvFYKokwlqJVqGBpWTV5CmlUEVCQYlDKPWyjDsYobhVfeiGxGIgyfmJB7wGDRrMuY7Gpi1WDgihpeDg5mXHWyusTPvjPXo3fQxqHDBd9NAXYet8yyiUDOFZBzsDCmJFmto6A3ehBzbwaRh16J8RdeZXjzO2Drz5Ah6pZ7Hmu5LokeTFi8DybZGhGNc368/la2kecbqGL7UgmEkDPIX61FhOkFbdgikCezGHRG3f5qXhE4fTZ8eXO2Sw7GBHGsCq4+IEJG/QNdJd2K4L+XvG/D/CwhcEv+MhFPCSPd4Pl9i734XI5B5o3tLbaNkil/NUvJSLYVCqMEt9zr3vU4oK9MkatG2Vp0zz80z4arkAipMpHF7rrQqbLNaaOT/MaXr5Qk5WHDJ7pLEt6ZalHasgVoFqOFUR4yotXAm8ZV5EoUuGR6n+TTsElUy4medta8HC+DRY=
-  app: intense-beach-95674
+    secure: S2q1wmVT/Mz5e8oi0c7tg9j5OayZb8Z5uqX3RUDYK0vivwTaJiaTUdM9JITDot7JO21BetDfKuQ65kiTUM/Mr/Gm8R8x5ri+Xb5G7NtJ4DgIoTda20QiV25vTY66tMyojoESyj2prHVGq/jfrVIV9UD874u46JatVkd4mvdrMh7v06yKH1nTOerK7km1L4MjAKlWVfk9PdzZpw9vNhwUuvf9ZCsaeleCf6yz7iTx0k1onwIty2yq9vB5smy3X3LPfv6qhw8qrA2vMDycywUDAP9sPw91sYI4yIy62eAsSH16pgIvsRJJzbbrK/PMjJaMRNXF1QNv70hRze/9vDJhipTi6C5O8HmjlfrKnc4Ro3hO1TNTPJNlwsQGgqA/woUXXQKnRtD0PnTAvQKvcc4PR4Mk+B5vBMwQ1a6t/BJR0yGGrM4YOVw4KU3oJrRxv2uVIUu/DRuRHsbQCPphWXWqeeyx9B/QcQHj2ZEPtkalm0O3YEbhy7F1BVIx+m8ostvIR5A5km1hxWbY09upw9MMA2B1Wg7Z4AzJEcbJwZ0KT2pBz7XLH8DpnOu64b6Y6EMk2Argzy0vSoQQYxUR4kyWFK/0z1NwSXYk5Z/CV7Xq/9WrScTn6gk9H8/sD0LsnaIYzh4v0XYgBEjvkRJKzCxpOstFZp+Eu412YF8Um2z6r4E=
+  app: vast-savannah-64536
+  run:
+    - "npm run build.prod"
   on:
     repo: senthilkumar04/ysytweb
-  run:
-    - npm run build.prod
