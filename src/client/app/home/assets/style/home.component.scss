@@ -1,0 +1,33 @@
+.home-wrapper {
+    .home-wrapper-container {
+        background: url('app/home/assets/imgs/home-bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        .home-wrapper-container-navbar {
+            padding: 15px;
+            .home-wrapper-container-navbar-brand {
+                color: white;
+            }
+            .home-wrapper-container-navbar-menu {
+                .home-wrapper-container-navbar-menu-item {
+                    .home-wrapper-container-navbar-menu-item-link {
+                        color: white;
+                    }
+                }
+            }
+        }
+        .home-wrapper-container-footer {
+            bottom: 0;
+            color: white;
+            height: 60px;
+            line-height: 60px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
