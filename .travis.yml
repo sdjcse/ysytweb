@@ -12,12 +12,11 @@ before_install:
 - sh -e /etc/init.d/xvfb start
 script:
 - npm test
+- npm run build.prod
 deploy:
   provider: heroku
   api_key:
     secure: S2q1wmVT/Mz5e8oi0c7tg9j5OayZb8Z5uqX3RUDYK0vivwTaJiaTUdM9JITDot7JO21BetDfKuQ65kiTUM/Mr/Gm8R8x5ri+Xb5G7NtJ4DgIoTda20QiV25vTY66tMyojoESyj2prHVGq/jfrVIV9UD874u46JatVkd4mvdrMh7v06yKH1nTOerK7km1L4MjAKlWVfk9PdzZpw9vNhwUuvf9ZCsaeleCf6yz7iTx0k1onwIty2yq9vB5smy3X3LPfv6qhw8qrA2vMDycywUDAP9sPw91sYI4yIy62eAsSH16pgIvsRJJzbbrK/PMjJaMRNXF1QNv70hRze/9vDJhipTi6C5O8HmjlfrKnc4Ro3hO1TNTPJNlwsQGgqA/woUXXQKnRtD0PnTAvQKvcc4PR4Mk+B5vBMwQ1a6t/BJR0yGGrM4YOVw4KU3oJrRxv2uVIUu/DRuRHsbQCPphWXWqeeyx9B/QcQHj2ZEPtkalm0O3YEbhy7F1BVIx+m8ostvIR5A5km1hxWbY09upw9MMA2B1Wg7Z4AzJEcbJwZ0KT2pBz7XLH8DpnOu64b6Y6EMk2Argzy0vSoQQYxUR4kyWFK/0z1NwSXYk5Z/CV7Xq/9WrScTn6gk9H8/sD0LsnaIYzh4v0XYgBEjvkRJKzCxpOstFZp+Eu412YF8Um2z6r4E=
   app: vast-savannah-64536
-  run:
-    - "npm run build.prod"
   on:
     repo: senthilkumar04/ysytweb
