@@ -104,6 +104,7 @@ gulp.task('test.watch', (done: any) =>
 gulp.task('serve.dev', (done: any) =>
   runSequence('build.dev',
               'server.start',
+              'watch.dev',
               done));
 
 // --------------
