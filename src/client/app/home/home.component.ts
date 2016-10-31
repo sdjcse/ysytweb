@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   selector: 'ysyt-home',
   templateUrl: 'home.component.html',
-  styleUrls: [ 'assets/style/home.component.css' ]
+  styleUrls: [ 'assets/style/home.component.scss' ]
 })
 
 export class HomeComponent { }
