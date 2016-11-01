@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
+  moduleId: module.id,
   selector: 'ysyt-home',
-  templateUrl: 'app/home/home.component.html',
-  styleUrls: ['app/home/assets/style/home.component.css']
+  templateUrl: 'home.component.html',
+  styleUrls: [ 'assets/css/home.component.css' ]
 })
 
 export class HomeComponent { }
