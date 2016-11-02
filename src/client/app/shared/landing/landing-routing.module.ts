@@ -1,5 +1,5 @@
 import { NgModule }             from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 import  { LandingComponent } from './landing.component';
 
@@ -11,3 +11,4 @@ import  { LandingComponent } from './landing.component';
 })
 
 export class LandingRoutingModule { }
+
