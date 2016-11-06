@@ -1,33 +1,52 @@
 .home-wrapper {
     .home-wrapper-container {
-        background: url('app/shared/landing/assets/imgs/home-bg.jpg') no-repeat center center fixed;
-        background-size: cover;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        .home-wrapper-container-navbar {
-            padding: 15px;
-            .home-wrapper-container-navbar-brand {
-                color: white;
+        padding: 0;
+        .home-banner-intro-container {
+            padding: 54px 0;
+            position: relative;
+            text-align: center;
+            color: white;
+            background: url(app/shared/landing/assets/imgs/home-bg.jpg) no-repeat center center;
+            background-size: cover;
+            .home-banner-intro-bg-layout {
+                background-color: black;
+                height: 100%;
+                opacity: 0.3;
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
             }
-            .home-wrapper-container-navbar-menu {
-                .home-wrapper-container-navbar-menu-item {
-                    .home-wrapper-container-navbar-menu-item-link {
-                        color: white;
+            .home-banner-intro-message {
+                position: relative;
+                padding-top: 15%;
+                padding-bottom: 20%;
+                .home-banner-intro-message-content {
+                    .message-header {
+                        color: #ffc107;
+                    }
+                    .message-sub-header {
+                        color: #ffca28;
+                    }
+                    .service-icon {
+                        font-size: 22px;
+                    }
+                    .service-title {
+                        font-size: 12px;
+                    }
+                }
+                .home-banner-intro-search-form {
+                    input,
+                    button {
+                        border: 2px solid #ffc107;
                     }
                 }
             }
         }
-        .home-wrapper-container-footer {
-            bottom: 0;
-            color: white;
-            height: 60px;
-            line-height: 60px;
-            position: absolute;
+        .home-footer {
+            font-size: 12px;
+            padding: 15px 0;
             text-align: center;
-            width: 100%;
         }
     }
 }
