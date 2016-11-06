@@ -19,16 +19,19 @@ export class ProjectConfig extends SeedConfig {
 
     // Add `NPM` third-party libraries to be injected/bundled.
     this.NPM_DEPENDENCIES = [
-      ...this.NPM_DEPENDENCIES
-      // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
+      ...this.NPM_DEPENDENCIES,
+      {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
+      {src: 'tether/dist/js/tether.min.js', inject: 'libs'},
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
+      {src: 'bootstrap/dist/js/bootstrap.min.js', inject: 'libs'}
     ];
 
     // Add `local` third-party libraries to be injected/bundled.
     this.APP_ASSETS = [
       ...this.APP_ASSETS,
       // {src: `${this.APP_SRC}/your-path-to-lib/libs/jquery-ui.js`, inject: true, vendor: false}
-      {src: `${this.CSS_SRC}/vendor/bootstrap/bootstrap.css`, inject: true, vendor: false}
+      {src: `${this.CSS_SRC}/vendor/bootstrap/bootstrap.css`, inject: true, vendor: false},
+      {src: `${this.CSS_SRC}/vendor/font-awesome/css/font-awesome.css`, inject: true, vendor: false}
     ];
 
     /* Add to or override NPM module configurations: */
