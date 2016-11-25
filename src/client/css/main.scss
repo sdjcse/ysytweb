@@ -1,6 +1,3 @@
-//@import 'vendor/bootstrap/bootstrap';
-@import 'helpers/bootstrap-responsive-col-height';
-@import 'helpers/helper-classes';
 
 body,
 html {
@@ -9,6 +6,8 @@ html {
 }
 
 .app-wrapper {
-    width: 100%;
-    height: 100%;
+    height: 500px;
+    min-width: 786px;
+    min-height: 500px;
+    position: relative;
 }

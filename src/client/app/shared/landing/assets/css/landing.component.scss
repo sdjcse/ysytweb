@@ -1,52 +1,53 @@
-.home-wrapper {
-    .home-wrapper-container {
-        padding: 0;
-        .home-banner-intro-container {
-            padding: 54px 0;
-            position: relative;
-            text-align: center;
-            color: white;
-            background: url(app/shared/landing/assets/imgs/home-bg.jpg) no-repeat center center;
-            background-size: cover;
-            .home-banner-intro-bg-layout {
-                background-color: black;
-                height: 100%;
-                opacity: 0.3;
-                position: absolute;
-                width: 100%;
-                top: 0;
-                left: 0;
+/* imports */
+@import '../../../../../css/helpers/material-color/sass-material-colors';
+/* imports */
+
+.landing-wrapper {
+    .landing-top-section {
+        background-image: linear-gradient(130deg, #de4882, #ed9649), linear-gradient(#dd4287, #dd4287);
+        .landing-header {
+            .landing-header-logo {
+                color: material-color('white', '500');
             }
-            .home-banner-intro-message {
-                position: relative;
-                padding-top: 15%;
-                padding-bottom: 20%;
-                .home-banner-intro-message-content {
-                    .message-header {
-                        color: #ffc107;
-                    }
-                    .message-sub-header {
-                        color: #ffca28;
-                    }
-                    .service-icon {
-                        font-size: 22px;
-                    }
-                    .service-title {
-                        font-size: 12px;
-                    }
-                }
-                .home-banner-intro-search-form {
-                    input,
-                    button {
-                        border: 2px solid #ffc107;
+            .landing-header-menu {
+                font-size: 14px;
+                .landing-header-menu-item {
+                    padding: 0 10px;
+                    .landing-header-menu-link {
+                        color: material-color('white', '500');
                     }
                 }
             }
         }
-        .home-footer {
-            font-size: 12px;
-            padding: 15px 0;
-            text-align: center;
+        .landing-search-container {
+            padding: 30px 0;
+            .search-box {
+                background-color: material-color('white', '500');
+                border-radius: 5px;
+                margin: 0 auto;
+                width: 420px;
+                -webkit-border-radius: 5px; 
+                -moz-border-radius: 5px;
+                .search-box-title {
+                    color: material-color('deep-purple', '700');
+                    padding: 15px;
+                }
+                .search-box-content {
+                    padding: 15px;
+                }
+            }
+            .search-intro {
+                color: material-color('white', '500');
+                text-align: center;
+                .search-intro-title {
+                    font-weight: 100;
+                }
+                .search-intro-service {
+                    .service-icon {
+                        font-size: 30px;
+                    }
+                }
+            }
         }
     }
 }
