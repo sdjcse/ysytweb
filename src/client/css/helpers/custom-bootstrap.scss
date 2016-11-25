@@ -5,12 +5,12 @@
 //1. Nav tabs
 .nav-tabs {
     .nav-link {
-        color: material-color('black', '500');
-        font-size: 14px;
+        color: material-color('black', '500') !important;
+        font-size: 14px !important;
     }
     .active {
-        border: none;
-        border-bottom: 3px solid material-color('deep-purple', '700');
+        border: none !important;
+        border-bottom: 3px solid material-color('deep-purple', '700') !important;
         border-color: material-color('deep-purple', '700') !important;
         color: material-color('deep-purple', '700') !important;
     }
