@@ -1,0 +1,46 @@
+/* imports */
+@import '../../../../../css/helpers/material-color/sass-material-colors';
+/* imports */
+
+.register-wrapper {
+    background-image: linear-gradient(130deg, #7954b6, #bb429f), linear-gradient(#7954b6, #7954b6);
+    height: 100%;
+    position: relative;
+    width: 100%;
+    .register-wrapper-bg-right {
+        height: 100%;
+        object-fit: contain;
+	    opacity: 0.5;
+        position: absolute;
+        right: 0;
+        top: 0;;
+    }
+    .register-wrapper-bg-left {
+        height: 100%;
+        left: 0;
+        object-fit: contain;
+	    opacity: 0.7;
+        position: absolute;
+        top: 0;;
+    }
+    .register-box {
+        background-color: material-color('white', '500');
+        border-radius: 5px;
+        margin: 0 auto;
+        margin-top: 8%; 
+        padding: 15px;
+        width: 450px;
+        -webkit-border-radius: 5px; 
+        -moz-border-radius: 5px;
+        .register-box-title {
+            color: material-color('deep-purple', '700');
+            font-weight: normal;
+            text-align: center;
+        }
+        .register-box-form {
+            .register-box-signin-text {
+                font-size: 12px;
+            }
+        }
+    }
+}

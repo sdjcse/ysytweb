@@ -1,0 +1,9 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="54px" height="47px">
+<path fill-rule="evenodd"  stroke="rgb(142, 94, 221)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+ d="M1.000,23.000 L13.750,0.992 L39.249,0.992 L51.999,23.000 L39.249,45.006 L13.750,45.006 L1.000,23.000 Z"/>
+<path fill-rule="evenodd"  stroke="rgb(243, 71, 145)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+ d="M26.498,11.989 C32.300,11.989 37.003,16.693 37.003,22.496 C37.003,28.300 32.300,33.004 26.498,33.004 C20.697,33.004 15.994,28.300 15.994,22.496 C15.994,16.693 20.697,11.989 26.498,11.989 Z"/>
+</svg>

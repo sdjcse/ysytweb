@@ -25,7 +25,7 @@
                 background-color: material-color('white', '500');
                 border-radius: 5px;
                 margin: 0 auto;
-                width: 420px;
+                width: 90%;
                 -webkit-border-radius: 5px; 
                 -moz-border-radius: 5px;
                 .search-box-title {
@@ -46,6 +46,36 @@
                     .service-icon {
                         font-size: 30px;
                     }
+                }
+            }
+        }
+    }
+    .landing-feature-section {
+        padding: 15px;
+        .landing-feature-section-image{
+            width: 100%;
+        }
+        .landing-feature-title-content {
+            text-align: center;
+            .feature-main-title {
+                color: material-color('deep-purple', '700');
+                font-weight: 100;
+            }
+            .feature-main-sub-title {
+                font-size: 12px;
+            }
+        }
+        .landing-feature-detail {
+            .landing-feature-detail-content-holder {
+                padding-left: 15px;
+                .landing-feature-detail-title {
+                    color: material-color('deep-purple', '700');
+                    font-weight: 100;
+                    margin-bottom: 15px;
+                }
+                .landing-feature-detail-content {
+                    color: material-color('grey', '500');
+                    font-size: 12px;
                 }
             }
         }
