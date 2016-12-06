@@ -1,0 +1,46 @@
+/* imports */
+@import '../../../../../css/helpers/material-color/sass-material-colors';
+/* imports */
+
+.login-wrapper {
+    background-image: linear-gradient(130deg, material-color('deep-purple', '400'), material-color('pink', '400')), linear-gradient(material-color('deep-purple', '400'), material-color('deep-purple', '400'));
+    height: 100%;
+    position: relative;
+    width: 100%;
+    .login-wrapper-bg-right {
+        height: 100%;
+        object-fit: contain;
+	    opacity: 0.5;
+        position: absolute;
+        right: 0;
+        top: 0;;
+    }
+    .login-wrapper-bg-left {
+        height: 100%;
+        left: 0;
+        object-fit: contain;
+	    opacity: 0.7;
+        position: absolute;
+        top: 0;;
+    }
+    .login-box {
+        background-color: material-color('white', '500');
+        border-radius: 5px;
+        margin: 0 auto;
+        margin-top: 8%; 
+        padding: 15px;
+        width: 450px;
+        -webkit-border-radius: 5px; 
+        -moz-border-radius: 5px;
+        .login-box-title {
+            color: material-color('deep-purple', '700');
+            font-weight: normal;
+            text-align: center;
+        }
+        .login-box-form {
+            .login-box-signup-text, .login-box-additional-input {
+                font-size: 12px;
+            }
+        }
+    }
+}

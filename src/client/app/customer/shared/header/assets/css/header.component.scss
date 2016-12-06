@@ -1,0 +1,18 @@
+/* imports */
+//@import '../../../../../../css/helpers/material-color/sass-material-colors';
+/* imports */
+
+.header-wrapper {
+    .header-logo {
+        color: material-color('black', '500');
+    }
+    .header-menu {
+        font-size: 14px;
+        .header-menu-item {
+            padding: 0 10px;
+            .header-menu-link {
+                color: material-color('black', '500');
+            }
+        }
+    }
+}

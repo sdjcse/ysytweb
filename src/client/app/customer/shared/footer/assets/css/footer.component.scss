@@ -1,0 +1,46 @@
+/* imports */
+@import '../../../../../../css/helpers/material-color/sass-material-colors';
+/* imports */
+
+.footer-wrapper {
+    color: material-color('white', '500');
+    .footer-top {
+        background-color: material-color('grey', '900');
+        padding: 15px;
+        .footer-column {
+            margin-bottom: 15px;
+            .footer-column-title {
+                .highlighted-heading {
+                    font-size: 30px;
+                    font-weight: lighter;
+                }
+                .default-heading {
+                    font-size: 14px;
+                    font-weight: lighter;
+                }
+            }
+            .footer-column-content {
+                .about-us-content {
+                    font-size: 12px;
+                }
+                .sitemap-content {
+                    font-size: 12px;
+                    list-style: none;
+                    padding: 0;
+                    .sitemap-content-item {
+                        margin-bottom: 5px;
+                    }
+                }
+                .newsletter-content {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        background-color: material-color('grey', '800');
+        font-size: 12px;
+        padding: 10px;
+        text-align: center;
+    }
+}

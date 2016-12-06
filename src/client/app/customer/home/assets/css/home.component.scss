@@ -1,0 +1,69 @@
+/* imports */
+@import '../../../../../css/helpers/material-color/sass-material-colors';
+/* imports */
+
+.landing-wrapper {
+    .landing-top-section {
+        background-image: linear-gradient(130deg, #de4882, #ed9649), linear-gradient(#dd4287, #dd4287);
+        .landing-search-container {
+            padding: 30px 0;
+            .search-box {
+                background-color: material-color('white', '500');
+                border-radius: 5px;
+                margin: 0 auto;
+                width: 90%;
+                -webkit-border-radius: 5px; 
+                -moz-border-radius: 5px;
+                .search-box-title {
+                    color: material-color('deep-purple', '700');
+                    padding: 15px;
+                }
+                .search-box-content {
+                    padding: 15px;
+                }
+            }
+            .search-intro {
+                color: material-color('white', '500');
+                text-align: center;
+                .search-intro-title {
+                    font-weight: 100;
+                }
+                .search-intro-service {
+                    .service-icon {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .landing-feature-section {
+        padding: 15px;
+        .landing-feature-section-image{
+            width: 100%;
+        }
+        .landing-feature-title-content {
+            text-align: center;
+            .feature-main-title {
+                color: material-color('deep-purple', '700');
+                font-weight: 100;
+            }
+            .feature-main-sub-title {
+                font-size: 12px;
+            }
+        }
+        .landing-feature-detail {
+            .landing-feature-detail-content-holder {
+                padding-left: 15px;
+                .landing-feature-detail-title {
+                    color: material-color('deep-purple', '700');
+                    font-weight: 100;
+                    margin-bottom: 15px;
+                }
+                .landing-feature-detail-content {
+                    color: material-color('grey', '500');
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
