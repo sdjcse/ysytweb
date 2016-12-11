@@ -7,15 +7,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { CustomerModule } from './customer/customer.module';
 
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
-  imports: [ BrowserModule, AppRoutingModule, CustomerModule ],
+  imports: [ BrowserModule, AppRoutingModule, CustomerModule, FormsModule],
   declarations: [ AppComponent ],
   providers: [{
     provide: APP_BASE_HREF,
     useValue: '<%= APP_BASE %>'
   }],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
 })
 
 export class AppModule { }
