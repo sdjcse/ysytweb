@@ -1,0 +1,53 @@
+<div id="listing">
+    <div class="sidenavFilter" id="mySidenav" style="width: 0px; padding: 60px 0px 0px;">
+        <a class="closebtn" href="javascript:void(0)" (click)="closeNav()">×</a>
+        <div id="filter">
+            <label for="price-min">Price:</label><br>
+            <input class="slider" max="20000" min="2000" step="10" type="range">
+            <span></span><br>
+            <label>Number of People:</label><br>
+            <input class="form-control form-control-sm" max="5" min="1" type="number">
+            <label>House Type:</label><br>
+            <input class="checkbox-inline" type="checkbox" value="">Option 1
+            <input class="checkbox-inline" type="checkbox" value="">Option 2
+            <input class="checkbox-inline" type="checkbox" value="">Option 3
+            <br>
+            <label>Booking Type:</label><br>
+            <input class="checkbox-inline" type="checkbox" value="">Option 1
+            <input class="checkbox-inline" type="checkbox" value="">Option 2
+            <input class="checkbox-inline" type="checkbox" value="">Option 3
+            <br>
+            <label>Sort By:</label><br>
+            <button class="btn btn-outline-primary active" type="button">low-high</button>
+            <button class="btn btn-outline-primary" type="button">high-low</button>
+            <br>
+            <button class="btn btn-primary btn-lg btn-block" type="button">Filter</button>
+
+        </div>
+    </div>
+
+    <div class="secondMenubar">
+        <span (click)="openNav()" class="filterIcon"><i  aria-hidden="true" class="fa fa-filter"></i>
+    </span> <span class="count">Total 300 PG's available</span>
+        <span class="searchIcon"><i  aria-hidden="true" class="fa fa-search"></i>
+    </span>
+    </div>
+    <div class="row" id="listingPage">
+        <div *ngFor="let data of listingData;let i = index" class="col-md-4">
+            <div class="listingCard" on-mouseover="togglestates(i)" on-mouseleave="togglestop(i)">
+
+                <div class="thumbnail" [ngStyle]="{'background': 'url('+data.imageUrl+') center center no-repeat','background-size': 'cover'}">
+                </div>
+
+                <div class="list-content">
+                    <div class="category"><i aria-hidden="true" class="fa fa-angle-right"></i>
+                    </div>
+                    <h1 class="title">Eswaran Paying Guest</h1>
+                    <h2 class="sub_title">3 bed available for boy</h2>
+                    <p class="address{{i}} address">Flat No 113 N56/2 A Mylasandra Village Kengeri Hobli Rajarajeshwari Nagar Bangalore 560098</p>
+                    <div class="pricing">₹4000 /bed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
