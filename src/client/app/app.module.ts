@@ -8,8 +8,10 @@ import { CustomerModule } from './customer/customer.module';
 
 import { AppComponent } from './app.component';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
-  imports: [ BrowserModule, AppRoutingModule, CustomerModule ],
+  imports: [ BrowserModule, AppRoutingModule, CustomerModule, NgbModule.forRoot() ],
   declarations: [ AppComponent ],
   providers: [{
     provide: APP_BASE_HREF,

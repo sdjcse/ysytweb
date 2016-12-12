@@ -1,0 +1,124 @@
+<div class="product-details-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                <div class="product-gallery-container">
+                    <ngb-carousel class="product-gallery-images shadow-2">
+                        <template ngbSlide *ngFor="let gallery of productGallery">
+                            <img src="{{gallery.url}}">
+                            <div class="carousel-caption">
+                                <h3>{{gallery.title}}</h3>
+                                <p>{{gallery.description}}</p>
+                            </div>
+                        </template>
+                    </ngb-carousel>
+                    <div class="product-gallery-thumb-images">
+                        <div class="row">
+                            <img class="col-lg-3 col-md-3 col-sm-3 col-xs-3 app-margin-bottom-10" *ngFor="let thumbs of productGallery" src="{{thumbs.url}}"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+               <div class="product-basic-details">
+                   <div class="product-title-details">
+                       <h5>Two shared paying guest room</h5>
+                       <small class="text-muted">posted on 20 Nov, 2016 by <b><a href="#">Your space your time</a></b></small>
+                   </div>
+                   <div class="product-rent-details">
+                       <div class="rent-section">
+                           <h4>Rent</h4>
+                           <span class="app-currency-unit"><span class="currency"><i class="fa fa-inr"></i>&nbsp;5,000</span>&nbsp;<span class="unit">/month</span></span>
+                       </div>
+                       <div class="other-section">
+                           <div class="app-display-inline-block app-margin-right-20">
+                                <div class="section-title">Food cost&emsp;<i class="fa fa-question-circle"></i></div>
+                                <span class="app-currency-unit"><span class="currency"><i class="fa fa-inr"></i>&nbsp;2,500</span>&nbsp;<span class="unit">/month</span></span>
+                           </div>
+                           <div class="app-display-inline-block">
+                                <div class="section-title">Security deposit&emsp;<i class="fa fa-question-circle"></i></div>
+                                <span class="app-currency-unit"><span class="currency"><i class="fa fa-inr"></i>&nbsp;1,00,000</span></span>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="product-availability">
+                   <div>
+                       <h6>Availability</h6>
+                       <div class="app-display-inline-block" *ngFor="let availability of totalAvailability">
+                           <span class="app-margin-right-10" [ngClass]="{'active': (availability == 1)}">
+                               <i class="fa fa-bed"></i>
+                           </span>
+                       </div>
+                       <div>
+                           <small class="text-muted">Hurry up! Only 1 bed left</small>
+                       </div>
+                   </div>
+               </div>
+               <div class="product-call-to-action shadow-2">
+                   <ngb-tabset>
+                        <ngb-tab title="Schedule visit">
+                            <template ngbTabContent>
+                                <form class="action-content">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-md" id="visit-name-input" placeholder="Full name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-md" id="visit-email-input" placeholder="Email address">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-md" id="visit-contact-input" placeholder="Contact number">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #d="ngbDatepicker">
+                                            <div class="input-group-addon" (click)="d.toggle()" >
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                 <ngb-timepicker></ngb-timepicker>
+                                            </div>
+                                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                                                <div class="visit-count-content">
+                                                    <div class="visit-count">
+                                                        <span class="app-margin-right-10">10</span>
+                                                    </div>
+                                                    <div class="visit-content">
+                                                        <strong>People scheduled visit</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="visit-count-message">
+                                                    <p>Suggest you to book directly to avoid missing out.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-primary btn-md btn-block">Schedule visit</button>
+                                    </div>
+                                </form>
+                            </template>
+                        </ngb-tab>
+                        <ngb-tab>
+                            <template ngbTabTitle>Book now</template>
+                            <template ngbTabContent>
+                                <form class="action-content">
+                                    <div class="form-group">
+                                        <small>To Book, you need to pay a token amount and the remaining before move-in.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-primary btn-md btn-block">Pay token amountt</button>
+                                    </div>
+                                </form>
+                            </template>
+                        </ngb-tab>
+                    </ngb-tabset>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>

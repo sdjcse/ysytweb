@@ -1,0 +1,70 @@
+/* imports */
+@import '../../../../../css/helpers/material-color/sass-material-colors';
+/* imports */
+
+.product-details-wrapper {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    .product-gallery-container {
+        .product-gallery-images {
+            margin-bottom: 15px;
+        }
+        .product-gallery-thumb-images {
+            margin-bottom: 15px;
+        }
+    }
+    .product-basic-details {
+        .product-title-details {
+            margin-bottom: 15px;
+        }
+        .product-rent-details {
+            margin-bottom: 15px;
+            .rent-section {
+                padding: 15px;
+                background-color: material-color('deep-purple', '50');
+                border-bottom: 1px solid material-color('deep-purple', '100');
+            }
+            .other-section {
+                padding: 15px;
+                border-bottom: 1px solid material-color('grey', '100');
+                .section-title {
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .product-availability {
+        background-color: material-color('grey', '100');
+        padding: 15px;
+        margin-bottom: 15px;
+        .active {
+            color: material-color('deep-purple','500');
+        }
+    }
+    .product-call-to-action {
+        background-color: material-color('grey', '100');
+        margin-bottom: 15px;
+        .action-content {
+            padding: 15px;
+            .visit-count-content {
+                display: table;
+                vertical-align: top;
+                width: 100%;
+                .visit-count {
+                    display: table-cell;
+                    font-size: 40px;
+                    vertical-align: middle;
+                }
+                .visit-content {
+                    display: table-cell;
+                    font-size: 12px;
+                    vertical-align: middle;
+                }
+            }
+            .visit-count-message {
+                font-size: 12px;
+            }
+        }
+    }
+}
