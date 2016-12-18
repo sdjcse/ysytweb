@@ -16,7 +16,13 @@ import { ProductDetailsComponent }  from './product-details/product-details.comp
 
 @NgModule({
   imports: [ CommonModule, FormsModule, SharedModule, CustomerRoutingModule, NgbModule ],
-  declarations: [ CustomerComponent, CustomerHomeComponent, CustomerLoginComponent, CustomerRegisterComponent, ProductDetailsComponent, listingcomponent ]
+  declarations: [ CustomerComponent, 
+                  CustomerHomeComponent, 
+                  CustomerLoginComponent, 
+                  CustomerRegisterComponent, 
+                  ProductDetailsComponent, 
+                  listingcomponent ]
 })
 
 export class CustomerModule { }
+
