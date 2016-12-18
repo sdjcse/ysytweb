@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -10,11 +11,12 @@ import { CustomerComponent } from './customer.component';
 import { CustomerHomeComponent } from './home/home.component';
 import { CustomerLoginComponent } from './login/login.component';
 import { CustomerRegisterComponent } from './register/register.component';
+import { listingcomponent }   from './product-list/product-list.component';
 import { ProductDetailsComponent }  from './product-details/product-details.component';
 
 @NgModule({
-  imports: [ CommonModule, SharedModule, CustomerRoutingModule, NgbModule ],
-  declarations: [ CustomerComponent, CustomerHomeComponent, CustomerLoginComponent, CustomerRegisterComponent, ProductDetailsComponent ]
+  imports: [ CommonModule, FormsModule, SharedModule, CustomerRoutingModule, NgbModule ],
+  declarations: [ CustomerComponent, CustomerHomeComponent, CustomerLoginComponent, CustomerRegisterComponent, ProductDetailsComponent, listingcomponent ]
 })
 
 export class CustomerModule { }
