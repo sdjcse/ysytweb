@@ -5,7 +5,7 @@
                 <div class="product-gallery-container">
                     <ngb-carousel class="product-gallery-images shadow-2">
                         <template ngbSlide *ngFor="let gallery of productGallery">
-                            <img src="{{gallery.url}}">
+                            <img [src]="gallery.url">
                             <div class="carousel-caption">
                                 <h3>{{gallery.title}}</h3>
                                 <p>{{gallery.description}}</p>
@@ -16,6 +16,51 @@
                         <div class="row">
                             <img class="col-lg-3 col-md-3 col-sm-3 col-xs-3 app-margin-bottom-10" *ngFor="let thumbs of productGallery" src="{{thumbs.url}}"/>
                         </div>
+                    </div>
+                </div>
+                <div class="product-amenities-container">
+                    <h4>Amenities</h4>
+                    <hr class="app-margin-top-5 app-margin-bottom-15"/>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 app-margin-bottom-15" *ngFor="let category of productCategoryAndAmenities">
+                            <h6>{{category.name}}</h6>
+                            <div *ngFor="let amenities of category.amenities" class="app-margin-bottom-5">
+                                <img [src]="amenities.iconPath" width="16" />
+                                <span class="amenities-title">{{amenities.title}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-details-container">
+                    <h4>Details</h4>
+                    <div class="table-responsive">
+                        <table class="table product-details-table">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Type</th>
+                                    <td>Paying guest</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">For</th>
+                                    <td>Men</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Number of beds</th>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Food preference</th>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Address</th>
+                                    <td>No 8, Ramakrishna Nagar, Muthailpet, Puducherry - 605003</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Contact</th>
+                                    <td>(+91) - 9677989956</td>
+                                </tr>
+                        </table>
                     </div>
                 </div>
             </div>

@@ -14,6 +14,43 @@ import { ProductGallery } from './product-gallery';
 export class ProductDetailsComponent {
     productGallery: ProductGallery[];
     totalAvailability : number[] = [1,2];
+    productCategoryAndAmenities : any[] = [{
+        name : 'Living Room',
+        slug : 'living-room',
+        amenities : [{
+            title : 'Sofa',
+            iconPath : 'app/shared/imgs/svg/sofa.svg'
+        },{
+            title : 'Washing machine',
+            iconPath : 'app/shared/imgs/svg/washing-machine.svg'
+        },{
+            title : 'Television',
+            iconPath : 'app/shared/imgs/svg/television.svg'
+        }]
+    },{
+        name : 'Kitchen',
+        slug : 'kitchen',
+        amenities : [{
+            title : 'Refrigerator',
+            iconPath : 'app/shared/imgs/svg/fridge.svg'
+        }, {
+            title : 'Stove',
+            iconPath : 'app/shared/imgs/svg/stove.svg'
+        }, {
+            title : 'Dining table',
+            iconPath : 'app/shared/imgs/svg/dining-table.svg'
+        }]
+    },{
+        name : 'Bathroom',
+        slug : 'bathroom',
+        amenities : [{
+            title : 'Geyser',
+            iconPath : 'app/shared/imgs/svg/water-heater.svg'
+        }, {
+            title : 'Toilet',
+            iconPath : 'app/shared/imgs/svg/toilet.svg'
+        }]
+    }]
     constructor(config: NgbCarouselConfig) {
         // customize default values of carousels used by this component tree
         config.interval = 3000;

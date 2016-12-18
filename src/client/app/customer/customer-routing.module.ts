@@ -6,7 +6,7 @@ import { CustomerHomeComponent } from './home/home.component';
 import { CustomerLoginComponent } from './login/login.component';
 import { CustomerRegisterComponent } from './register/register.component';
 import { ProductDetailsComponent }  from './product-details/product-details.component';
-import { listingcomponent }   from './listingPage/listing.component';
+import { listingcomponent }   from './product-list/product-list.component';
 
 const customerRoutes: Routes = [
   { path: '', redirectTo: 'customer', pathMatch: 'full' },
@@ -17,7 +17,7 @@ const customerRoutes: Routes = [
       { path: 'signin', component: CustomerLoginComponent },
       { path: 'signup', component: CustomerRegisterComponent },
       { path: 'product/:id', component: ProductDetailsComponent },
-      { path: 'listingPage', component: listingcomponent}
+      { path: 'products', component: listingcomponent}
     ]
   }
 ];

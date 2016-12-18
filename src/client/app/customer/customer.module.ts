@@ -11,7 +11,7 @@ import { CustomerComponent } from './customer.component';
 import { CustomerHomeComponent } from './home/home.component';
 import { CustomerLoginComponent } from './login/login.component';
 import { CustomerRegisterComponent } from './register/register.component';
-import { listingcomponent }   from './listingPage/listing.component';
+import { listingcomponent }   from './product-list/product-list.component';
 import { ProductDetailsComponent }  from './product-details/product-details.component';
 
 @NgModule({
