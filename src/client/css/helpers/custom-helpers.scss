@@ -19,6 +19,16 @@
 .app-margin-right-15 { margin-right: 15px; }
 .app-margin-right-20 { margin-right: 20px; }
 
+/* Padding */
+.app-no-right-left-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+.app-no-top-bottom-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 /* Currency format */
 .app-currency-unit {
   .currency {
