@@ -1,32 +1,32 @@
 /* Text align */
-.app-text-center { text-align: center; }
-.app-text-left { text-align: left; }
-.app-text-right { text-align: right; }
+.app-text-center { text-align: center !important;}
+.app-text-left { text-align: left !important; }
+.app-text-right { text-align: right !important; }
 
 /* Margin */
-.app-margin-top-5 { margin-top: 5px; }
-.app-margin-top-10 { margin-top: 10px; }
-.app-margin-top-15 { margin-top: 15px; }
-.app-margin-top-20 { margin-top: 20px; }
+.app-margin-top-5 { margin-top: 5px !important; }
+.app-margin-top-10 { margin-top: 10px !important; }
+.app-margin-top-15 { margin-top: 15px !important; }
+.app-margin-top-20 { margin-top: 20px !important; }
 
-.app-margin-bottom-5 { margin-bottom: 5px; }
-.app-margin-bottom-10 { margin-bottom: 10px; }
-.app-margin-bottom-15 { margin-bottom: 15px; }
-.app-margin-bottom-20 { margin-bottom: 20px; }
+.app-margin-bottom-5 { margin-bottom: 5px !important; }
+.app-margin-bottom-10 { margin-bottom: 10px !important; }
+.app-margin-bottom-15 { margin-bottom: 15px !important; }
+.app-margin-bottom-20 { margin-bottom: 20px !important; }
 
-.app-margin-right-5 { margin-right: 5px; }
-.app-margin-right-10 { margin-right: 10px; }
-.app-margin-right-15 { margin-right: 15px; }
-.app-margin-right-20 { margin-right: 20px; }
+.app-margin-right-5 { margin-right: 5px !important; }
+.app-margin-right-10 { margin-right: 10px !important; }
+.app-margin-right-15 { margin-right: 15px !important; }
+.app-margin-right-20 { margin-right: 20px !important; }
 
 /* Padding */
 .app-no-right-left-padding {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 .app-no-top-bottom-padding {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 /* Currency format */
@@ -41,7 +41,7 @@
 
 /* Display format */
 .app-display-inline-block {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 /* Shadows */
